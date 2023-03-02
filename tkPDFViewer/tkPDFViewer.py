@@ -43,9 +43,9 @@ class ShowPdf():
             open_pdf = fitz.open(pdf_location)
 
             for page in open_pdf:
-                pix = page.getPixmap()
+                pix = page.get_pixmap()
                 pix1 = fitz.Pixmap(pix,0) if pix.alpha else pix
-                img = pix1.getImageData("ppm")
+                img = pix1.tobytes("ppm")
                 timg = PhotoImage(data = img)
                 self.img_object_li.append(timg)
                 if bar==True and load=="after":
