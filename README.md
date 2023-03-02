@@ -1,4 +1,4 @@
-# THIS IS A FORK
+# !!! THIS IS A FORK !!!
 
 This is a fork of original tkPDFViewer librarary that fixes an " AttributeError: ‘Page’ object has no attribute ‘getPixmap’ " bug, which occurs due to a change in a fitz module. Original developer abandoned this project hence my fork with a fix.
 
